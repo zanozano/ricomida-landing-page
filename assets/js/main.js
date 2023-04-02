@@ -42,6 +42,12 @@ $(".making").on('dblclick', function () {
   $(this).css('color', 'red');
 });
 /* TOGGLE INFORMACION */
-$('.card-title').on('click', function () {
-  $('.card-text').toggle();
+$('#card-panqueque').on('click', function () {
+  $('#panqueque').toggle();
+});
+$('#card-tiramisu').on('click', function () {
+  $('#tiramisu').toggle();
+});
+$('#card-plateada').on('click', function () {
+  $('#plateada').toggle();
 });

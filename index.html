@@ -1,297 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--CSS BOOTSTRAP -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-			crossorigin="anonymous"
-		/>
-		<!--GOOGLE FONT - LOBSTER -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-			rel="stylesheet"
-		/>
-		<!--GOOGLE FONT - OPEN SANS -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!--CSS -->
-		<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--FAVICON -->
+	<link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+	<meta name="author" content="Cristobal Manzano">
+	<!--CSS BOOTSTRAP -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+	<!--GOOGLE FONT - LOBSTER -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+	<!--GOOGLE FONT - OPEN SANS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+	<!--CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<title>Ricomida</title>
-	</head>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<body>
-		<!--NAVBAR-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-			<a class="navbar-brand" href="https://www.linkedin.com/in/zanozano/">Ricomida</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>Inicio <span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Recetas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Nosotros</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--MAIN-->
-		<main class="container my-4 px-5">
-			<!--PIZZA-HEADER-->
-			<section id="pizza-header">
-				<hr class="d-none d-sm-block my-4" />
-				<div class="d-flex flex-wrap">
-					<div class="pizza-img">
-						<img class="img-fluid" src="./assets/img/principal.jpg" alt="main-pizza" />
-					</div>
-					<div class="pizza-content">
-						<h1 class="my-3">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
-						<hr />
-						<h3>110 MIN / 6 a 8 PORCIONES</h3>
-						<div class="btn-pizza">
-							<button
-								id="enviarCorreo"
-								type="button"
-								class="btn btn-outline-primary my-4"
-								data-toggle="tooltip"
-								data-placement="bottom"
-								title="Presiona para enviar a tu correo"
-							>
-								Enviar por correo
-							</button>
-							<button
-								id="agregarFavorito"
-								type="button"
-								class="btn btn-outline-primary my-4"
-								data-toggle="tooltip"
-								data-placement="bottom"
-								title="Agrega esta receta a tus favoritas"
-							>
-								Añadir a favoritos
-							</button>
-						</div>
+	<title>Ricomida</title>
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+		<a class="navbar-brand" href="https://www.linkedin.com/in/zanozano/">Ricomida</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Recetas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contacto</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--MAIN-->
+	<main class="container my-4 px-5">
+		<!--PIZZA-HEADER-->
+		<section id="pizza-header">
+			<hr class="d-none d-sm-block my-4" />
+			<div class="d-flex flex-wrap">
+				<div class="pizza-img">
+					<img class="img-fluid" src="./assets/img/principal.jpg" alt="main-pizza" />
+				</div>
+				<div class="pizza-content">
+					<h1 class="my-3">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+					<hr />
+					<h3>110 MIN / 6 a 8 PORCIONES</h3>
+					<div class="btn-pizza">
+						<button id="enviarCorreo" type="button" class="btn btn-outline-primary my-4"
+							data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo">
+							Enviar por correo
+						</button>
+						<button id="agregarFavorito" type="button" class="btn btn-outline-primary my-4"
+							data-toggle="tooltip" data-placement="bottom" title="Agrega esta receta a tus favoritas">
+							Añadir a favoritos
+						</button>
 					</div>
 				</div>
-			</section>
-			<!--CAROUSEL-->
-			<section id="pizza-carousel" class="d-none d-sm-block my-4">
-				<div class="owl-carousel owl-theme">
-					<div class="item">
-						<img src="./assets/img/slider-1.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-2.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-3.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-4.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-5.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-6.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-7.png" alt="" />
-					</div>
-					<div class="item">
-						<img src="./assets/img/slider-8.png" alt="" />
+			</div>
+		</section>
+		<!--CAROUSEL-->
+		<section id="pizza-carousel" class="d-none d-sm-block my-4">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="./assets/img/slider-1.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-2.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-3.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-4.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-5.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-6.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-7.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-8.png" alt="" />
+				</div>
+			</div>
+		</section>
+		<!--PIZZA CONTANT-->
+		<section id="pizza-content" class="pizza-recipe">
+			<article class="my-4">
+				<h3 class="ingredients">INGREDIENTES</h3>
+				<p>
+					<strong>Masa</strong><br />
+					20gr de levadura seca instantánea.<br />
+					1 cucharadita de azúcar.<br />
+					500ml de agua tibia.<br />
+					100ml de aceite vegetal.<br />
+					4 cucharadas de aceite de oliva.<br />
+					65gr de harina de maíz fina (chuchoca).<br />
+					2 cucharaditas de sal.<br />
+					625gr harina.<br /><br />
+					<strong>Salsa</strong><br />
+					5 cucharadas de aceite de oliva.<br />
+					1/2 cebolla picada en cubos finos.<br />
+					3 cucharadas de Orégano Gourmet.<br />
+					1 1/2 cucharadas de Albahaca Gourmet.<br />
+					2 tarros de tomates en cubos al natural.<br />
+					2 cucharaditas de azúcar.<br /><br />
+					<strong>Relleno</strong><br />
+					1/2 cebolla, en cubos.<br />
+				</p>
+			</article>
+			<!---->
+			<article class="my-4">
+				<h3 class="making">PREPARACIÓN</h3>
+				<p>
+					<strong>1</strong>. Para la masa, disolver la levadura y el azúcar en agua
+					tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la
+					harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el
+					resto de harina harina, la cantidad necesaria para tener una masa blanda.
+					Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa
+					elástica (agregar harina en el mesón a medida que se va amasando para que la
+					masa no se pegue). Poner la masa en un bol aceitado, tapar con un paño de
+					cocina limpio y dejar reposar hasta que la masa duplique su volumen
+					(leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos
+					adicioanles. <br /><br />
+					<strong>2</strong>. Mientras tanto preparar la salsa: Calentar 4 cucharadas
+					de aceite en un olla a fuego medio. Agregar la cebolla, Orégano Gourmet,
+					Albahaca Gourmet, sal y cocinar hasta que la ceolla esté dorada. Agregar el
+					ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro,
+					a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se
+					haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a
+					gusto. Reservar. <br /><br />
+					<strong>3</strong>. Relleno: Cocinar las chalotas en el aceite de oliva
+					hasta que estén transparentes. Agregar los champiñones y las espinacas,
+					cocinar hasta qye estén cocidos y se haya evaporado todo el liquido que
+					hayan votado los vegetales. Reservar. <br /><br />
+					<strong>4</strong>. Calentar en el horno a 220°C. <br /><br />
+					<strong>5</strong>. Una vez que la masa haya reposado, dividirla en dos
+					bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm,
+					hacer un borde de 5cm con la masa. Dividir el relleno entre las dos pizzas,
+					tapar con el queso mozarella, luego espolvorear el queso rallado.
+					<br /><br />
+					<strong>6</strong>. Hornear por 35 a 40 minutos o hasta que el relleno esté
+					caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de
+					desmoldar.
+				</p>
+			</article>
+		</section>
+		<!--OTHER-RECIPE-->
+		<section id="other-recipe">
+			<hr />
+			<h2 class="text-center">RECETAS RELACIONADAS</h2>
+			<div class="card-deck d-flex flex-wrap justify-content-center mt-4">
+				<div id="card-panqueque" class="card" style="width: 18rem">
+					<img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="recipe-card-1" />
+					<div class="card-body">
+						<h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+						<p id="panqueque" class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
 					</div>
 				</div>
-			</section>
-			<!--PIZZA CONTANT-->
-			<section id="pizza-content" class="pizza-recipe">
-				<article class="my-4">
-					<h3 class="ingredients">INGREDIENTES</h3>
-					<p>
-						<strong>Masa</strong><br />
-						20gr de levadura seca instantánea.<br />
-						1 cucharadita de azúcar.<br />
-						500ml de agua tibia.<br />
-						100ml de aceite vegetal.<br />
-						4 cucharadas de aceite de oliva.<br />
-						65gr de harina de maíz fina (chuchoca).<br />
-						2 cucharaditas de sal.<br />
-						625gr harina.<br /><br />
-						<strong>Salsa</strong><br />
-						5 cucharadas de aceite de oliva.<br />
-						1/2 cebolla picada en cubos finos.<br />
-						3 cucharadas de Orégano Gourmet.<br />
-						1 1/2 cucharadas de Albahaca Gourmet.<br />
-						2 tarros de tomates en cubos al natural.<br />
-						2 cucharaditas de azúcar.<br /><br />
-						<strong>Relleno</strong><br />
-						1/2 cebolla, en cubos.<br />
-					</p>
-				</article>
-				<!---->
-				<article class="my-4">
-					<h3 class="making">PREPARACIÓN</h3>
-					<p>
-						<strong>1</strong>. Para la masa, disolver la levadura y el azúcar en agua
-						tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la
-						harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el
-						resto de harina harina, la cantidad necesaria para tener una masa blanda.
-						Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa
-						elástica (agregar harina en el mesón a medida que se va amasando para que la
-						masa no se pegue). Poner la masa en un bol aceitado, tapar con un paño de
-						cocina limpio y dejar reposar hasta que la masa duplique su volumen
-						(leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos
-						adicioanles. <br /><br />
-						<strong>2</strong>. Mientras tanto preparar la salsa: Calentar 4 cucharadas
-						de aceite en un olla a fuego medio. Agregar la cebolla, Orégano Gourmet,
-						Albahaca Gourmet, sal y cocinar hasta que la ceolla esté dorada. Agregar el
-						ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro,
-						a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se
-						haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a
-						gusto. Reservar. <br /><br />
-						<strong>3</strong>. Relleno: Cocinar las chalotas en el aceite de oliva
-						hasta que estén transparentes. Agregar los champiñones y las espinacas,
-						cocinar hasta qye estén cocidos y se haya evaporado todo el liquido que
-						hayan votado los vegetales. Reservar. <br /><br />
-						<strong>4</strong>. Calentar en el horno a 220°C. <br /><br />
-						<strong>5</strong>. Una vez que la masa haya reposado, dividirla en dos
-						bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm,
-						hacer un borde de 5cm con la masa. Dividir el relleno entre las dos pizzas,
-						tapar con el queso mozarella, luego espolvorear el queso rallado.
-						<br /><br />
-						<strong>6</strong>. Hornear por 35 a 40 minutos o hasta que el relleno esté
-						caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de
-						desmoldar.
-					</p>
-				</article>
-			</section>
-			<!--OTHER-RECIPE-->
-			<section id="other-recipe">
-				<hr />
-				<h2 class="text-center">RECETAS RELACIONADAS</h2>
-				<div class="card-deck d-flex flex-wrap justify-content-center mt-4">
-					<div class="card" style="width: 18rem">
-						<img
-							src="./assets/img/recipe-card-1.png"
-							class="card-img-top"
-							alt="recipe-card-1"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up the
-								bulk of the card's content.
-							</p>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem">
-						<img
-							src="./assets/img/recipe-card-2.png"
-							class="card-img-top"
-							alt="recipe-card-2"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">TIRAMISÚ</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up the
-								bulk of the card's content.
-							</p>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem">
-						<img
-							src="./assets/img/recipe-card-3.png"
-							class="card-img-top"
-							alt="recipe-card-3"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">PLATEADA</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up the
-								bulk of the card's content.
-							</p>
-						</div>
+				<div id="card-tiramisu" class="card" style="width: 18rem">
+					<img src="./assets/img/recipe-card-2.png" class="card-img-top" alt="recipe-card-2" />
+					<div class="card-body">
+						<h5 class="card-title">TIRAMISÚ</h5>
+						<p id="tiramisu" class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
 					</div>
 				</div>
-			</section>
-		</main>
-		<!--FOOTER-->
-		<footer class="footer container-fluid p-0">
-			<div id="newsletter" class="bg-red text-center p-5">
-				<h2 class="text-center">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
-				<h3>
-					y obtén las mejores recetas que tenemos en
-					<span class="tag-ricomida">Ricomida</span>
-				</h3>
-				<button type="button" class="btn btn-outline-secondary my-4">Empezar</button>
+				<div id="card-plateada" class="card" style="width: 18rem">
+					<img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="recipe-card-3" />
+					<div class="card-body">
+						<h5 class="card-title">PLATEADA</h5>
+						<p id="plateada" class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="bg-black d-flex justify-content-center align-items-center">
-				<h4 class="py-4">Ricomida</h4>
-			</div>
-		</footer>
-		<!-- BOOTSTRAP JQUERY-->
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-			crossorigin="anonymous"
-		></script>
-		<!-- OWL JS-->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<!-- MY JS-->
-		<script src="./assets/js/main.js"></script>
-	</body>
+		</section>
+	</main>
+	<!--FOOTER-->
+	<footer class="footer container-fluid p-0">
+		<div id="newsletter" class="bg-red text-center p-5">
+			<h2 class="text-center">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
+			<h3>
+				y obtén las mejores recetas que tenemos en
+				<span class="tag-ricomida">Ricomida</span>
+			</h3>
+			<button type="button" class="btn btn-outline-secondary my-4">Empezar</button>
+		</div>
+		<div class="bg-black d-flex justify-content-center align-items-center">
+			<h4 class="py-4">Ricomida</h4>
+		</div>
+	</footer>
+	<!-- BOOTSTRAP JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<!-- OWL JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- MY JS-->
+	<script src="./assets/js/main.js"></script>
+</body>
+
 </html>

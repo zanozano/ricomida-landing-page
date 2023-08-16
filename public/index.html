@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Indulge in delectable pizza perfection at Ricomida. Savor every slice, served with love. Your ultimate pizza destination awaits!">
+	<meta name="keywords" content="pizza, Ricomida, delicious pizza, pizza destination, pizza perfection">
+	<!--FAVICON -->
+	<link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+	<meta name="author" content="Cristobal Manzano">
+	<!--CSS BOOTSTRAP -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+	<!--GOOGLE FONT - LOBSTER -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+	<!--GOOGLE FONT - OPEN SANS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+	<!--CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Ricomida</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+		<a class="navbar-brand" href="https://www.linkedin.com/in/zanozano/">Ricomida</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Recipes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+
+
+	<main class="container">
+
+		<section class="container__header">
+			<div class="container__block">
+				<img class="container__img img-fluid active-modal" src="./assets/img/principal.jpg" alt="main-pizza"
+					data-toggle="modal" data-target="#my-modal" />
+				<div class="container__content">
+					<h1 class="text-uppercase">Chicago-style pizza with spinach and mushrooms.
+					</h1>
+					<hr />
+					<img class="container__icon" src="./assets/img/timer.png" alt="timer">
+					<h3>90 MIN</h3>
+					<h4>6 / 8 Portions</h4>
+					<button id="agregarFavorito" type="button" class="btn btn-outline-primary my-4 container__btn"
+						data-toggle="tooltip" data-placement="bottom" title="Add this recipe to your favorite">
+						Add to favorite
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="pizza-carousel" class="d-none d-sm-block my-4">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="./assets/img/slider-1.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-2.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-3.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-4.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-5.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-6.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-7.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+				<div class="item">
+					<img src="./assets/img/slider-8.png" alt="" class="active-modal" data-toggle="modal"
+						data-target="#my-modal" />
+				</div>
+			</div>
+		</section>
+
+		<hr />
+
+		<section class="section">
+			<article class="section__article--recipe">
+				<h3>INGREDIENTS</h3>
+				<h4>Dough</h4>
+				<ul>
+					<li>20g instant dry yeast.</li>
+					<li>1 teaspoon sugar.</li>
+					<li>500ml warm water.</li>
+					<li>100ml vegetable oil.</li>
+					<li>4 tablespoons olive oil.</li>
+					<li>65g fine corn flour (chuchoca).</li>
+					<li>2 teaspoons salt.</li>
+					<li>625g flour.</li>
+				</ul>
+				<h4>Sauce</h4>
+				<ul>
+					<li>5 tablespoons olive oil.</li>
+					<li>1/2 onion, finely diced.</li>
+					<li>3 tablespoons Gourmet Oregano.</li>
+					<li>1 1/2 tablespoons Gourmet Basil.</li>
+					<li>2 cans of diced tomatoes in natural juice.</li>
+					<li>2 teaspoons sugar.</li>
+				</ul>
+				<h4>Filling</h4>
+				<ul>
+					<li>1/2 onion, diced.</li>
+				</ul>
+			</article>
+
+			<article class="section__article--instruction">
+				<h3>PREPARATION</h3>
+				<ol>
+					<li>
+						For the dough, dissolve the yeast and sugar in warm water in a large bowl. Let it rest for 2
+						minutes. Add the
+						vegetable oil, corn flour, salt, and 400g of flour. Mix well. Knead and add the remaining flour,
+						as
+						needed, to have a
+						soft dough. Place it on the counter and knead for 5 minutes or until you have a smooth elastic
+						dough
+						(add flour to the
+						counter as you knead to prevent sticking). Put the dough in an oiled bowl, cover with a clean
+						kitchen towel, and let it
+						rise until it doubles in size. Punch down the dough to deflate it and then let it rise for an
+						additional 40 minutes.
+
+					</li>
+					<li>
+						Meanwhile, prepare the sauce: Heat 4 tablespoons of oil in a pot over medium heat. Add the
+						onion, Gourmet Oregano, Gourmet Basil, salt, and cook until the onion is golden. Add the garlic
+						and cook for 30 seconds.
+						Add
+						the canned tomatoes
+						along with their juice to the onion mixture. Add the sugar and cook until the mixture has
+						reduced
+						and thickened, about
+						30 minutes. Season with salt and pepper to taste. Set aside.
+					</li>
+					<li>
+						Filling: Cook the shallots in olive oil until they are translucent. Add the mushrooms and
+						spinach, cook until they
+						are cooked and all the liquid released by the vegetables has evaporated. Set aside.
+					</li>
+					<li>
+						Preheat the oven to 220°C.
+					</li>
+					<li>
+						Once the dough has rested, divide it into two balls. Roll out each dough to cover two 26 cm
+						(10
+						inch) removable
+						bottom tart pans, forming a 5cm (2 inch) border with the dough. Divide the filling between the
+						two
+						pizzas, cover with mozzarella cheese, then sprinkle with grated cheese.
+					</li>
+					<li>
+						Bake for 35 to 40 minutes or until the filling is hot and the base is puffy and golden. Wait
+						a few minutes before unmolding.
+					</li>
+				</ol>
+			</article>
+		</section>
+
+		<hr />
+
+		<section class="section__card">
+			<h2>RELATED RECIPES</h2>
+			<div class="card-deck d-flex flex-wrap justify-content-center mt-4">
+				<div class="card">
+					<img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="recipe-card-1" />
+					<div class="card-body">
+						<h5 class="card-title">Pancakes, Milk and Cream</h5>
+						<p class="card-text">
+							Indulge in a delightful treat with our Pancakes topped with luscious caramelized milk and a
+							dollop of rich cream. A
+							symphony of flavors that will satisfy your cravings.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src=" ./assets/img/recipe-card-2.png" class="card-img-top" alt="recipe-card-2" />
+					<div class="card-body">
+						<h5 class="card-title">Tiramisu</h5>
+						<p class="card-text">
+							Experience pure bliss with our exquisite Tiramisu. Layers of delicate mascarpone and
+							coffee-soaked ladyfingers, dusted
+							with cocoa. A classic Italian delight that'll transport your taste buds to Italy.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="recipe-card-3" />
+					<div class="card-body">
+						<h5 class="card-title">Beef Roast</h5>
+						<p class="card-text">
+							Savor perfection with our tender Beef Roast, slow-cooked to succulent perfection. A symphony
+							of flavors, harmonizing the
+							richness of plateada cut with a medley of aromatic spices. Elevate your dining experience
+							today.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer container-fluid p-0">
+		<div class="footer__top text-center p-5">
+			<h2 class="text-center">SUBSCRIBE TO OUR NEWSLETTER</h2>
+			<h3>Get the best recipes we have at Ricomida</h3>
+			<button type="button" class="btn btn-outline-secondary mt-4">Get Started</button>
+		</div>
+		<div class="footer__bottom d-flex justify-content-center align-items-center">
+			<h4 class="py-4">Ricomida</h4>
+		</div>
+	</footer>
+
+	<!--MODAL-->
+	<div id="my-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body" id="modalBody">
+					<img id="modal-img" src="" alt="Imagen de la tarjeta">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BOOTSTRAP JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<!-- OWL JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- MY JS-->
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

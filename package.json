@@ -1,0 +1,28 @@
+{
+  "name": "ricomida-landing-page",
+  "version": "2.0.0",
+  "description": "Project for a restaurant company  using Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanozano/ricomida.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Cristobal Manzano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zanozano/ricomida/issues"
+  },
+  "homepage": "https://github.com/zanozano/ricomida#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

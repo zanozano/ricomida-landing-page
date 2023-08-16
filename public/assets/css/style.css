@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* Definimos las Custom properties */
+:root {
+  /* Colores */
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: Roboto, Helvetica, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* (Opcional) Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Opcional) Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* (Opcional) Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* (Opcional) */
+  hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* For webkit-based browsers (Chrome, Safari, Edge) */
+/* Customize the scrollbar track (the background behind the thumb) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* On hover, change the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: #343a40;
+  --secondary-color: #dc3545;
+  --font-primary: rgba(55, 58, 60, 1);
+  --font-secondary: #ffff;
+}
+
+body {
+  color: var(--font-primary);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+}
+
+.container {
+  margin: 4rem auto;
+}
+.container__header {
+  text-align: center;
+}
+.container__block {
+  display: flex;
+  gap: 2rem;
+}
+.container__img {
+  width: 50%;
+}
+.container__content {
+  width: 50%;
+}
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.container hr {
+  margin: 2rem 0;
+}
+@keyframes timer {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.container__icon {
+  animation: timer 2s infinite;
+  margin: 0 auto 0.8rem auto;
+  width: 3rem;
+}
+.container__btn {
+  align-items: center;
+  background-color: var(--font-secondary);
+  border-color: var(--secondary-color);
+  border: 2px solid;
+  color: var(--secondary-color);
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 700;
+  gap: 1rem;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.container__btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--font-secondary);
+}
+@media screen and (max-width: 800px) {
+  .container__header {
+    text-align: center;
+  }
+  .container__block {
+    flex-direction: column-reverse;
+  }
+  .container__img {
+    width: 100%;
+  }
+  .container__content {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+.section__article--recipe {
+  width: 40%;
+}
+.section__article--recipe h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.section__article--recipe h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+.section__article--recipe ul {
+  margin-left: 20px;
+}
+.section__article--recipe li {
+  list-style: disc;
+  padding-bottom: 0.5rem;
+}
+.section__article--instruction {
+  width: 60%;
+}
+.section__article--instruction h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.section__article--instruction ol {
+  margin-left: 20px;
+}
+.section__article--instruction li {
+  list-style: decimal;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section__article--recipe {
+    width: 100%;
+  }
+  .section__article--recipe h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .section__article--recipe h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  .section__article--recipe ul {
+    margin-left: 20px;
+  }
+  .section__article--recipe li {
+    list-style: disc;
+    padding-bottom: 0.5rem;
+  }
+  .section__article--instruction {
+    width: 100%;
+  }
+  .section__article--instruction h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+.section__card {
+  display: flex;
+  flex-direction: column;
+}
+.section__card .card {
+  cursor: pointer;
+  background: var(--font-secondary);
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px var(--font-secondary);
+  transition: all 0.25s ease-in-out;
+}
+.section__card .card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.section__card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 10;
+}
+.section__card h5 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.footer {
+  color: var(--font-secondary);
+}
+.footer__top {
+  background: var(--secondary-color);
+  padding: 80px 0;
+}
+.footer h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  .footer h2 {
+    font-size: 2rem;
+  }
+}
+.footer .btn-outline-secondary {
+  border-color: var(--font-secondary);
+  color: var(--font-secondary);
+  width: 240px;
+}
+.footer .btn-outline-secondary:hover {
+  background-color: var(--font-secondary);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.footer__bottom {
+  background-color: var(--primary-color);
+}
+.footer h4 {
+  font-family: "Lobster", cursive;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

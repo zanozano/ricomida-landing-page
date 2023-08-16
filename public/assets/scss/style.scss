@@ -1,0 +1,244 @@
+//! This file is using BEM as a methodology to create hierarchy and organization of the styles
+@use "reset";
+@use "scroll-style";
+
+:root {
+    --primary-color: #343a40;
+    --secondary-color: #dc3545;
+    --font-primary: rgba(55, 58, 60, 1);
+    --font-secondary: #ffff;
+}
+
+body {
+    color: var(--font-primary);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-brand {
+    font-family: "Lobster", cursive;
+    font-size: 2em;
+}
+
+.container {
+    margin: 4rem auto;
+    &__header {
+        text-align: center;
+    }
+    &__block {
+        display: flex;
+        gap: 2rem;
+    }
+    &__img {
+        width: 50%;
+    }
+    &__content {
+        width: 50%;
+    }
+    & h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    & hr {
+        margin: 2rem 0;
+    }
+    @keyframes timer {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+    &__icon {
+        animation: timer 2s infinite;
+        margin: 0 auto 0.8rem auto;
+        width: 3rem;
+    }
+    &__btn {
+        align-items: center;
+        background-color: var(--font-secondary);
+        border-color: var(--secondary-color);
+        border: 2px solid;
+        color: var(--secondary-color);
+        display: flex;
+        font-size: 1.1rem;
+        font-weight: 700;
+        gap: 1rem;
+        margin: 0 auto;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--font-secondary);
+        }
+    }
+    @media screen and (max-width: 800px) {
+        &__header {
+            text-align: center;
+        }
+        &__block {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__content {
+            width: 100%;
+        }
+        & h1 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    &__article--recipe {
+        width: 40%;
+        & h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        & h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        & ul {
+            margin-left: 20px;
+        }
+        & li {
+            list-style: disc;
+            padding-bottom: 0.5rem;
+        }
+    }
+    &__article--instruction {
+        width: 60%;
+        & h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        & ol {
+            margin-left: 20px;
+        }
+        & li {
+            list-style: decimal;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__article--recipe {
+            width: 100%;
+            & h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            & h4 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                text-align: left;
+            }
+            & ul {
+                margin-left: 20px;
+            }
+            & li {
+                list-style: disc;
+                padding-bottom: 0.5rem;
+            }
+        }
+        &__article--instruction {
+            width: 100%;
+            & h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.section__card {
+    display: flex;
+    flex-direction: column;
+    & .card {
+        cursor: pointer;
+        background: var(--font-secondary);
+        border-radius: 8px;
+        border: none;
+        overflow: hidden;
+        box-shadow:
+            20px 20px 60px #bebebe,
+            -20px -20px 60px var(--font-secondary);
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+    }
+    & h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        z-index: 10;
+    }
+    & h5 {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+}
+
+.footer {
+    color: var(--font-secondary);
+    &__top {
+        background: var(--secondary-color);
+        padding: 80px 0;
+    }
+    & h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    @media screen and (max-width: 800px) {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    & .btn-outline-secondary {
+        border-color: var(--font-secondary);
+        color: var(--font-secondary);
+        width: 240px;
+    }
+    & .btn-outline-secondary:hover {
+        background-color: var(--font-secondary);
+        border-color: var(--secondary-color);
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+    &__bottom {
+        background-color: var(--primary-color);
+    }
+    & h4 {
+        font-family: "Lobster", cursive;
+        font-size: 2.8em;
+        margin: 0;
+    }
+}

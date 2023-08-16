@@ -29,25 +29,17 @@ $(function () {
 })
 /* ALERTA BOTON */
 $("#enviarCorreo").click(function () {
-  alert("El correo fue enviado correctamente");
+  alert("The email was sent successfully.");
 });
 $("#agregarFavorito").click(function () {
-  alert("Se ha agregado la receta a tus favoritos");
+  alert("The recipe has been added to your favorites.");
 });
-/*CAMBIO DE COLOR */
-$(".ingredients").on('dblclick', function () {
-  $(this).css('color', 'red');
-});
-$(".making").on('dblclick', function () {
-  $(this).css('color', 'red');
-});
-/* TOGGLE INFORMACION */
-$('#card-panqueque').on('click', function () {
-  $('#panqueque').toggle();
-});
-$('#card-tiramisu').on('click', function () {
-  $('#tiramisu').toggle();
-});
-$('#card-plateada').on('click', function () {
-  $('#plateada').toggle();
-});
+
+$(document).ready(function () {
+  $('.active-modal').on('click', function () {
+    var imageSrc = $(this).attr('src');
+    var modal = $('#my-modal');
+    modal.find('#modal-img').attr('src', imageSrc);
+    modal.modal('show');
+  })
+})

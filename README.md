@@ -72,7 +72,7 @@ For real-time updates of SCSS to CSS, use the following script after installing 
 
 See RicoMida Landing Page in action by visiting the following hosted link:
 
-[RicoMida Landing Page](https://ricomida-10423.web.app/)
+[RicoMida Landing Page](https://ricomida-10423.firebaseapp.com/)
 
 ## Contributing
 

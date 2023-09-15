@@ -1,12 +1,16 @@
 # RicoMida Landing Page
 
-![RicoMida Logo](./public/assets/img/favicon.png =120x)
+![RicoMida Logo](./public/assets/img/favicon.png )
 
 **Version:** 2.0.0
 
 ## Description
 
-Welcome to RicoMida Landing Page, a project designed for a restaurant company using JavaScript. This landing page showcases the delicious offerings of your restaurant and provides an engaging online presence for your customers.
+Welcome to Ricomida Landing Page, a captivating project meticulously crafted for a restaurant company using a blend of JavaScript, SCSS, jQuery, and Bootstrap. Our landing page not only highlights the mouthwatering offerings of your restaurant but also offers an immersive online experience for your valued customers.
+
+We've leveraged the power of SCSS, harnessing its flexibility to enhance the visual aesthetics and responsiveness of the user interface (UI). jQuery adds a layer of interactivity, providing dynamic and engaging features that will keep your users delighted. Bootstrap ensures a polished and user-friendly design, making navigation a breeze.
+
+Join us on a journey of culinary delight as we bring your restaurant's delectable dishes to life, right at your fingertips.
 
 ## Author
 

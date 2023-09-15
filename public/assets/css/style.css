@@ -385,6 +385,14 @@ body {
   font-weight: 800;
 }
 
+.card-deck {
+  transition: all 0.8s ease-in-out;
+}
+
+.card-deck:hover > :not(:hover) {
+  opacity: 0.5;
+}
+
 .footer {
   color: var(--font-secondary);
 }
